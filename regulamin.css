@@ -1,0 +1,114 @@
+body {
+    background-color: #211f1f;
+    -ms-overflow-style: none;
+scrollbar-width: none;  
+}
+body::-webkit-scrollbar { 
+display: none;  
+}
+.mid {
+    position: absolute;
+    min-height: 93%;
+    width: 100%;
+    left: 0%;
+}
+
+.window {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    right: 20%;
+    width: 60%;
+    height: 530%;
+    background-color: rgb(27, 25, 25);
+    padding: 30px;
+    overflow: hidden;
+    margin-bottom: 200px;
+    border-radius: 30px;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(27, 25, 25);
+    z-index: 200;
+}
+
+
+.Link {
+    font-family: Dm Sans;
+    color: grey;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    z-index: 100;
+    position: absolute; bottom:10px;
+}
+
+.Link:hover {
+    color: goldenrod;
+}
+
+.fa {
+    position: relative;
+    top: 3%;
+    padding: 20px;
+    width: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+}
+
+.fa:hover {
+    color: goldenrod;
+}
+.przerwa{
+    position: absolute;
+    left: 0;
+    top: 535%;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    background-color: #211f1f;
+}
+.napis{
+    position: absolute;
+    top:15%;
+    left: 22%;
+    width: 50%;
+    height: 10%;
+    font-size:3vw;
+    font-family: Dm sans;
+    color: lightgray;
+}
+
+.grid-wrapper{
+position: absolute;
+top: 0%;
+left: 75%;
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 6vw));
+gap: 1vw;
+}
+.grid-item{
+position: relative;
+width: 200px;
+height: 110px;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 20;
+}
+.header1 {
+position: absolute;
+height: 8%;
+width: 100%;
+background-color: rgb(27, 25, 25);
+left: 0%;
+top: 0%;
+padding-bottom: 32px;
+}

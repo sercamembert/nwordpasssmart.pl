@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #211f1f;
+            overflow: hidden;
+        }
+        
+         :root {
+            --bg: #1a1e24;
+            --color: #eee;
+            --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        .wrapper {
+            position: relative;
+            text-align: center;
+            top: 30%;
+            padding: 1.5rem 0;
+            filter: url('#goo');
+        }
+        
+        .button {
+            display: inline-block;
+            text-align: center;
+            background: var(--color);
+            color: var(--bg);
+            font-weight: bold;
+            padding: 1.18em 1.32em 1.03em;
+            line-height: 1;
+            border-radius: 1em;
+            position: relative;
+            min-width: 8.23em;
+            text-decoration: none;
+            font-family: var(--font);
+            font-size: 1.25rem;
+            background-color: rgb(238, 213, 68);
+        }
+        
+        .button:before,
+        .button:after {
+            width: 4.4em;
+            height: 2.95em;
+            position: absolute;
+            content: "";
+            display: inline-block;
+            background: var(--color);
+            border-radius: 50%;
+            transition: transform 1s ease;
+            transform: scale(0);
+            z-index: -1;
+            background-color: rgb(238, 213, 68);
+        }
+        
+        .button:before {
+            top: -25%;
+            left: 20%;
+        }
+        
+        .button:after {
+            bottom: -25%;
+            right: 20%;
+        }
+        
+        .button:hover:before,
+        .button:hover:after {
+            transform: none;
+        }
+        
+        .header {
+            position: absolute;
+            width: 100%;
+            height: 10%;
+            background-color: rgb(27, 25, 25);
+            left: 0%;
+            top: 0%;
+        }
+        
+        .mid {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 93%;
+            width: 100%;
+            left: 0%;
+            top: 0%;
+        }
+        
+        .window {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            right: 20%;
+            width: 60%;
+            height: 70%;
+            background-color: rgb(27, 25, 25);
+        }
+        
+        .footer {
+            position: absolute;
+            width: 100%;
+            height: 8%;
+            left: 0%;
+            top: 92%;
+            background-color: rgb(27, 25, 25);
+        }
+        
+        .Link {
+            font-family: monospace;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        .Link:hover {
+            color: goldenrod;
+        }
+        
+        .fa {
+            position: relative;
+            top: 3%;
+            padding: 20px;
+            width: 5px;
+            text-align: center;
+            text-decoration: none;
+            color: grey;
+        }
+        
+        .fa:hover {
+            color: goldenrod;
+        }
+        
+        #donacja {
+            position: relative;
+            top: 18%;
+            left: 8%;
+            font-size: 110px;
+            color: rgb(238, 213, 68);
+        }
+        
+        #donacja:hover {
+            color: linear-gradient(90deg, rgba(192, 192, 192, 1) 36%, rgba(64, 47, 47, 1) 49%);
+        }
+        
+        .text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            left: 8%;
+            top: 23%;
+            color: rgb(238, 213, 68);
+            font-size: 25px;
+        }
+        
+        #cena {
+            font-size: 70px;
+            color: rgb(238, 213, 68);
+        }
+        
+        .window img {
+            opacity: 1;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: transparent;
+        }
+        
+        .window img:nth-child(1) {
+            left: 0px;
+            animation: animate 5s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(2) {
+            left: 4%;
+            animation: animate 4s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(3) {
+            left: 8%;
+            animation: animate 2s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(4) {
+            left: 12%;
+            animation: animate 4.2s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(5) {
+            left: 16%;
+            animation: animate 4s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(6) {
+            left: 20%;
+            animation: animate 3s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(7) {
+            left: 24%;
+            animation: animate 2.5s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(8) {
+            left: 28%;
+            animation: animate 2s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(9) {
+            left: 32%;
+            animation: animate 3s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(10) {
+            left: 36%;
+            animation: animate 2.3s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(11) {
+            left: 40%;
+            animation: animate 2.7s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(12) {
+            left: 44%;
+            animation: animate 2.7s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(13) {
+            left: 48%;
+            animation: animate 2.5s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(14) {
+            left: 52%;
+            animation: animate 2.3s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(15) {
+            left: 56%;
+            animation: animate 2.8s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(16) {
+            left: 60%;
+            animation: animate 2.4s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(17) {
+            left: 64%;
+            animation: animate 2.2s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(18) {
+            left: 68%;
+            animation: animate 2.1s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(19) {
+            left: 72%;
+            animation: animate 2.3s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(20) {
+            left: 76%;
+            animation: animate 2.5s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(21) {
+            left: 80%;
+            animation: animate 2.7s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(22) {
+            left: 84%;
+            animation: animate 2.3s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(23) {
+            left: 88%;
+            animation: animate 2.1s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(24) {
+            left: 92%;
+            animation: animate 2.4s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        .window img:nth-child(25) {
+            left: 96%;
+            animation: animate 2.3s linear infinite;
+            animation-fill-mode: both;
+        }
+        
+        @keyframes animate {
+            0% {
+                top: 0px;
+                opacity: 0;
+                transform: translate(-20px) rotate(10deg);
+            }
+            10% {
+                opacity: 1;
+            }
+            60% {
+                transform: translate(35px) rotate(180deg);
+            }
+            100% {
+                top: 75%;
+            }
+        }
+    </style>
+</head>
+
+
+<div class="header"></div>
+
+<div class="mid">
+    <div class="window">
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+        <img src="back.png" alt="" />
+
+        <span id="donacja">N-word pass Premium</span><br>
+        <span class="text">Aby otzymać n-word pass premium kliknik w przycisk poniżej, w pole nick wpisz swoje imie<br> oraz w treści wpisz email. Lub przelej kwote 10 zł na:<br>Konto bankowe: 78102049000000860230536625 (w tytule wpisz imie oraz adres email)
+            <br>paypal: filipmaszota3@gmail.com (w tytule wpisz imie oraz adres email)
+        </span>
+        <div class="wrapper">
+            <a class="button" href="https://tipply.pl/u/pingu" style="color: black">Płatność</a>
+        </div>
+    </div>
+</div>
+<section class="footer">
+    <div style="position: absolute;left:28%; top: 20px; width: 350px; height: 7%; display: inline-block;">
+        <div style=" width: 120px; height: 10px;float: left;"><a class="Link" href="regulamin.html">Regulamin</a></div>
+        <div style=" width: 100px; height: 10px;float: left;"><a class="Link" href="kontakt.html">Kontakt</a></div>
+        <div style=" width: 130px; height: 10px;float: left;"><a class="Link" href="cookies.html">Pliki Cookies</a></div>
+    </div>
+    <div style="position: absolute; width: 150px; height: 20px;left:46%;top:35px">
+        <p style="color: gold;">&#169; 2022 n-wordpass.pl</p>
+
+    </div>
+
+    <div style="position: absolute;left:53%;">
+        <a href="adada.com" class="fa fa-facebook"></a>
+        <a href="adada.com" class="fa fa-instagram"></a>
+        <a href="uyagfa.com" class="fa fa-twitter"></a>
+    </div>
+
+
+</section>
+
+
+
+<body>
+
+</body>
+
+</html>
