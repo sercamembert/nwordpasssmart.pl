@@ -375,7 +375,7 @@ input[value] {
 .img-logo{
     max-width: 20vw;
 }
-@media all and (max-width: 400px) { /* jeśli szerokość jest większa od 400px  */
+@media all and (max-width: 768px) { /* jeśli szerokość jest większa od 400px  */
     .header1 {
         position: absolute;
         height: 1vh;
