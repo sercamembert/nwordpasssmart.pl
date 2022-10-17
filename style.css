@@ -452,12 +452,16 @@ input[value] {
     font-weight: bold;
 }
 .naglowekFirst {
-    text-align: left;
-    font-family: Dm Sans;
-    font-size: 13.2px;
     text-align: center;
+    font-family: Dm Sans;
+    font-size: 13.3px;
     color: goldenrod;
-    text-align: left;
+    position: absolute;
+    top:6%;
+}
+#basicNaglowek{
+    position: absolute;
+    left: 10%;
 }
 .img-ticket{
     max-width: 100vw;
