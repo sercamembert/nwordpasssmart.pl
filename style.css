@@ -598,6 +598,10 @@ input[value] {
     top:-3.5vh;
     left: 8px;
 }
+.window{
+    height: 0;
+    width: 0;
+}
 
 
   }
