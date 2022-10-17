@@ -375,3 +375,15 @@ input[value] {
 .img-logo{
     max-width: 20vw;
 }
+@media screen and (max-width: 400px) { /* jeśli szerokość jest większa od 400px  */
+    .header1 {
+        position: absolute;
+        height: 1vh;
+        width: 100vw;
+        background-color: rgb(27, 25, 25);
+        left: 0vw;
+        top: 0vh;
+    
+    }
+    
+  }
