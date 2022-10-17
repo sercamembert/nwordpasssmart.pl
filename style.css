@@ -410,7 +410,7 @@ input[value] {
 @media all and (max-width: 768px) { /* jeśli szerokość jest większa od 400px  */
     .header1 {
         position: absolute;
-        height: 8%;
+        height: 9%;
         width: 100vw;
         background-color: rgb(27, 25, 25);
         left: 0vw;
