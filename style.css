@@ -457,11 +457,11 @@ input[value] {
     font-size: 13.3px;
     color: goldenrod;
     position: absolute;
-    top:6%;
+    top:7%;
 }
 #basicNaglowek{
     position: absolute;
-    left: 10%;
+    left: 12%;
 }
 .img-ticket{
     max-width: 100vw;
