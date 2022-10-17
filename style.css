@@ -558,7 +558,7 @@ input[value] {
 .grid-item{
     position: relative;
     width: 14vw;
-    height: 8vh;
+    height: 7.3vh;
     display: flex;
     justify-content: center;
     align-items: center;
