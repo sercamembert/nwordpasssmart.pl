@@ -571,26 +571,27 @@ input[value] {
     font-size: 9px;
     position: relative;
     z-index: 100;
-    position: absolute; bottom:0.5vw;
+    position: absolute;
+    top: 70%;
 }
 #icon-top1{
     color: grey;
     font-size: 25px; 
     position: absolute;
-    top:-5vh;
+    top:-4vh;
     left: 3px;
 }
 #icon-top2{
     color: grey;
     font-size: 25px; 
     position: absolute;
-    top:-5vh;
+    top:-4vh;
 }
 #icon-top3{
     color: grey;
     font-size: 25px; 
     position: absolute;
-    top:-4.5vh;
+    top:-3.5vh;
     left: 8px;
 }
 
