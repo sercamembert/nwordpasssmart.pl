@@ -452,12 +452,9 @@ input[value] {
     font-weight: bold;
 }
 .naglowekFirst {
-    text-align: center;
-    font-family: Dm Sans;
     font-size: 13.3px;
-    color: goldenrod;
-    position: absolute;
     top:7%;
+    font-weight: 600;
 
 }
 .img-ticket{
@@ -511,6 +508,7 @@ input[value] {
 }
 .price{
     font-size: 30px;
+    font-weight: 700
 }
 input {
     position: absolute;
