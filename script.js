@@ -13,10 +13,10 @@ logo.addEventListener('mouseover', (event) => {
 
 $("#logo").hover(function() {
   if ($(window).width() < 768) {
-    return 0;
+   debugger; 
   }
   }, function() {
-return 0;
+debugger; 
   });
 
 $("#logo").hover(function() {
