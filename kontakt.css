@@ -15,23 +15,22 @@ display: none;
 
 .window {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 20%;
     right: 20%;
     width: 60%;
-    height: 65%;
+    min-height: 60%;
     background-color: rgb(27, 25, 25);
     padding: 30px;
     overflow: hidden;
-    margin-bottom: 200px;
+    padding-left: 70px;
     border-radius: 30px;
-    padding-left: 50px;
 }
 
 .footer {
     position: fixed;
-    width: 100%;
-    height: 8%;
+    width: 100vw;
+    height: 7vh;
     bottom: 0;
     left: 0;
     right: 0;
@@ -44,10 +43,10 @@ display: none;
     font-family: Dm Sans;
     color: grey;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1vw;
     position: relative;
     z-index: 100;
-    position: absolute; bottom:10px;
+    position: absolute; bottom:0.5vw;
 }
 
 .Link:hover {
@@ -56,9 +55,9 @@ display: none;
 
 .fa {
     position: relative;
-    top: 3%;
-    padding: 20px;
-    width: 5px;
+    top: 0.2vh;
+    padding: 1vw;
+    font-size: 2vw;
     text-align: center;
     text-decoration: none;
     color: grey;
@@ -69,37 +68,132 @@ display: none;
 }
 .napis{
     position: absolute;
-    top:8%;
+    top:15%;
+    left: 23%;
     width: 50%;
     height: 10%;
-    font-size:3vw;
+    font-size:2.8vw;
     font-family: Dm sans;
     color: lightgray;
 }
 
 .grid-wrapper{
-position: absolute;
-top: 0%;
-left: 75%;
-display: grid;
-grid-template-columns: repeat(3, minmax(0, 6vw));
-gap: 1vw;
+    position: absolute;
+    top: 0vh;
+    left: 75vw;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 6vw));
+    gap: 1vw;
 }
 .grid-item{
-position: relative;
-width: 200px;
-height: 110px;
-display: flex;
-justify-content: center;
-align-items: center;
-z-index: 20;
+    position: relative;
+    width: 10vw;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .header1 {
-position: absolute;
-height: 8%;
-width: 100%;
-background-color: rgb(27, 25, 25);
-left: 0%;
-top: 0%;
-padding-bottom: 32px;
+    position: absolute;
+    height: 11.5vh;
+    width: 100vw;
+    background-color: rgb(27, 25, 25);
+    left: 0vw;
+    top: 0vh;
+
 }
+
+.mark{
+    font-size: 25px; color: lightgray;font-family: Dm Sans;
+}
+.img-logo{
+    max-width:45vw;
+}
+#icon-top1{
+    color: grey;font-size: 2.2vw; position: absolute;top:-7vh;left: 0.2vw;
+}
+#icon-top2{
+    color: grey;font-size: 2.2vw; position: absolute;top:-7vh;left: -0.5vw;
+}
+#icon-top3{
+    color: grey;font-size: 2.2vw;position: absolute;top:-5vh;left: 1.5vw;
+}
+.napis-main{
+    font-size: 30px; color: lightgray;font-family: Dm Sans;
+}
+
+@media all and (max-width: 768px) { /* jeśli szerokość jest większa od 400px  */
+    .header1 {
+        height: 8%;
+        width: 100vw;
+    }
+.liSpan1 {
+    font-size:9px;
+}
+.grid-wrapper{
+    top: 0vh;
+    left: 57%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 10vw));
+    gap: 12px;
+}
+.grid-item{
+    width: 14vw;
+    height: 8vh;
+}
+.Link {
+    font-size: 9px;
+    top: 70%;
+}
+#icon-top1{
+    font-size: 25px; 
+    top:-4vh;
+    left: 3px;
+}
+#icon-top2{
+    font-size: 25px; 
+    top:-4vh;
+}
+#icon-top3{
+    font-size: 25px; 
+    top:-3.5vh;
+    left: 8px;
+}
+.window {
+    position: absolute;
+    top: 25%;
+    left: 12vw;
+    right: 14vw;
+    width: 50%;
+    min-height: 60%;
+    background-color: rgb(27, 25, 25);
+    overflow: hidden;
+    border-radius: 30px;
+}
+.napis-main{
+    font-size: 18px;
+    position: absolute;
+    left:2%;
+}
+.napis{
+    top:19%;
+    font-size: 25px;
+    width: 100%;
+    left: 14%;
+}
+.footer {
+    position: fixed;
+    width: 100vw;
+    height: 7vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(27, 25, 25);
+    z-index: 200;
+    bottom: 0%;
+}
+
+
+
+  }
