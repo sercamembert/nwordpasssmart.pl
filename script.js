@@ -11,13 +11,6 @@ logo.addEventListener('mouseover', (event) => {
 
 });*/
 
-$("#logo").hover(function() {
-  if ($(window).width() < 768) {
-   debugger; 
-  }
-  }, function() {
-debugger; 
-  });
 
 $("#logo").hover(function() {
     $("#okno").addClass("window");
