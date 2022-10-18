@@ -79,7 +79,6 @@ body {
     font-weight: bold;
     font-size: 2.7vw;
     color: rgb(239, 203, 136);
-    font-weight: bold;
 }
 
 .napis2 {
@@ -449,12 +448,11 @@ input[value] {
     font-weight: bold;
     font-size: 20px;
     color: rgb(239, 203, 136);
-    font-weight: bold;
 }
 .naglowekFirst {
     font-size: 13.3px;
     top:7%;
-    font-weight: 600;
+    font-weight: 800;
 
 }
 .img-ticket{
@@ -508,7 +506,7 @@ input[value] {
 }
 .price{
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 900;
 }
 input {
     position: absolute;
