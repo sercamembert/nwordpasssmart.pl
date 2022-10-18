@@ -1,11 +1,8 @@
 body {
     background-color: #211f1f;
-    -ms-overflow-style: none;
-scrollbar-width: none;  
+    overflow: hidden;
 }
-body::-webkit-scrollbar { 
-display: none;  
-}
+
 .mid {
     position: absolute;
     min-height: 93%;
