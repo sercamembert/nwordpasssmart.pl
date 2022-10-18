@@ -10,6 +10,15 @@ logo.addEventListener('mouseover', (event) => {
     
 
 });*/
+
+$("#logo").hover(function() {
+  if ($(window).width() < 768) {
+    return 0;
+  }
+  }, function() {
+return 0;
+  });
+
 $("#logo").hover(function() {
     $("#okno").addClass("window");
     $("#first").addClass("move");
