@@ -1,0 +1,409 @@
+body {
+    background-color: #211f1f;
+    overflow: hidden;
+}
+
+.mid {
+    position: absolute;
+    min-height: 93%;
+    width: 100%;
+    left: 0%;
+}
+
+.window {
+    position: absolute;
+    top: 25%;
+    left:32.5%;
+    right: 20%;
+    width: 35%;
+    min-height: 60%;
+    background-color: rgb(27, 25, 25);
+    padding: 25px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.footer {
+    position: fixed;
+    width: 100vw;
+    height: 7vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(27, 25, 25);
+    z-index: 200;
+}
+
+
+.Link {
+    font-family: Dm Sans;
+    color: grey;
+    text-decoration: none;
+    font-size: 1vw;
+    position: relative;
+    z-index: 100;
+    position: absolute; bottom:0.5vw;
+}
+
+.Link:hover {
+    color: goldenrod;
+}
+
+.fa {
+    position: relative;
+    top: 0.2vh;
+    padding: 1vw;
+    font-size: 2vw;
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+}
+
+.fa:hover {
+    color: goldenrod;
+}
+
+
+.grid-wrapper{
+    position: absolute;
+    top: 0vh;
+    left: 75vw;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 6vw));
+    gap: 1vw;
+}
+.grid-item{
+    position: relative;
+    width: 10vw;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header1 {
+    position: absolute;
+    height: 11.5vh;
+    width: 100vw;
+    background-color: rgb(27, 25, 25);
+    left: 0vw;
+    top: 0vh;
+
+}
+
+.mark{
+    font-size: 25px; color: lightgray;font-family: Dm Sans;
+}
+.img-logo{
+    max-width:45vw;
+}
+#icon-top1{
+    color: grey;font-size: 2.2vw; position: absolute;top:-7vh;left: 0.2vw;
+}
+#icon-top2{
+    color: grey;font-size: 2.2vw; position: absolute;top:-7vh;left: -0.5vw;
+}
+#icon-top3{
+    color: grey;font-size: 2.2vw;position: absolute;top:-5vh;left: 1.5vw;
+}
+.naglowek{
+    position: relative;
+    width: 100%;
+    height: 6vh;
+    text-align: center;
+    font-size: 2.5vw; color: lightgray;font-family: Dm Sans;
+}
+.produkt{
+    position: relative;
+    left: 7%;
+    width: 80%;
+    height: 13vh;
+}
+.product-img{
+    max-width:30%;
+}
+.product-napis{
+    font-size: 2vw; color: lightgray;font-family: Dm Sans;
+    font-weight: 900;
+    position: absolute;
+    left: 33%;
+    top: 5.2vh;
+}
+.composition{
+    position: relative;
+    left: 8%;
+    width: 80%;
+    height: 17vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
+    row-gap: 1vh;
+    column-gap: 2vh;
+    top: 1.5vh;
+}
+.cost{
+    width: 100%;
+    font-size: 1.4vw; color: lightgray;font-family: Dm Sans;
+}
+.cost2{
+    width: 100%;
+    font-size: 1.4vw; color: lightgray;font-family: Dm Sans;
+}
+.vl {
+    position: absolute;
+    left: 66%;
+    border-left: 3px solid lightgray;
+    height: 16vh;
+    top: 38%;
+  }
+
+  #checkbox:checked + label::after {
+    content: '';
+    position: absolute;
+    width: 1.2ex;
+    height: 0.4ex;
+    background: rgba(0, 0, 0, 0);
+    top: 0.9ex;
+    left: 0.4ex;
+    border: 3px solid #1062a4;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+ }
+ #checkbox {
+    position: absolute;
+    left: -999em;
+}
+#checkbox + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#checkbox + label::before {
+   content: "";
+   display: inline-block;
+   vertical-align: -25%;
+   height: 2ex;
+   width: 2ex;
+   background-color: white;
+   border: 1px solid rgb(166, 166, 166);
+   border-radius: 4px;
+   box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+   margin-right: 0.5em;
+}
+
+#checkbox2:checked + label::after {
+    content: '';
+    position: absolute;
+    width: 1.2ex;
+    height: 0.4ex;
+    background: rgba(0, 0, 0, 0);
+    top: 0.9ex;
+    left: 0.4ex;
+    border: 3px solid #1062a4;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+ }
+ #checkbox2 {
+    position: absolute;
+    left: -999em;
+}
+#checkbox2 + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#checkbox2 + label::before {
+   content: "";
+   display: inline-block;
+   vertical-align: -25%;
+   height: 2ex;
+   width: 2ex;
+   background-color: white;
+   border: 1px solid rgb(166, 166, 166);
+   border-radius: 4px;
+   box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+   margin-right: 0.5em;
+}
+
+
+ .check-box{
+    position: relative;
+    top:1.5vh;
+    left: 7%;
+    width: 90%;
+    height: 13vh;
+  }
+  .first-check{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    top:1vh;
+    font-size: 0.8vw; color: lightgray;font-family: Dm Sans;
+  }
+  .required{
+    position: relative;
+    top:2%;
+    left:3%;
+    width: 80%;
+    height: 20%;
+    font-size: 0.8vw; color: rgb(195, 27, 27);font-family: Dm Sans;
+    opacity: 0;
+  }
+  .secound-check{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    top:-0.6vh;
+    font-size: 0.8vw; color: lightgray;font-family: Dm Sans;
+  }
+  .nocheck{
+    color: rgb(195, 27, 27);
+  }
+  input[type=button] {
+    position: relative;
+    width: 25%;
+    height: 5vh;
+    background-color: rgb(112, 130, 85);
+    border: solid gold;
+    border-radius: 0.6vw;
+    padding: 0.1vw;
+    left: 37.5%;
+
+
+    
+}
+input[type=button]:hover {
+    background-color: rgb(48, 170, 48);
+    cursor: pointer;
+}
+
+.btn[value] {
+    font-family: Dm Sans;
+    font-size: 1vw;
+    color: rgb(255, 255, 255);
+}
+
+@media all and (max-width: 768px) { /* jeśli szerokość jest większa od 400px  */
+    .header1 {
+        height: 8%;
+        width: 100vw;
+    }
+.liSpan1 {
+    font-size:9px;
+}
+.grid-wrapper{
+    top: 0vh;
+    left: 57%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 10vw));
+    gap: 12px;
+}
+.grid-item{
+    width: 14vw;
+    height: 8vh;
+}
+.Link {
+    font-size: 9px;
+    top: 70%;
+}
+#icon-top1{
+    font-size: 25px; 
+    top:-4vh;
+    left: 3px;
+}
+#icon-top2{
+    font-size: 25px; 
+    top:-4vh;
+}
+#icon-top3{
+    font-size: 25px; 
+    top:-3.5vh;
+    left: 8px;
+}
+.window {
+    left: 20vw;
+    width: 50%;
+    min-height: 40%;
+}
+
+
+.naglowek{
+    top:1vh;
+    width: 105%;
+    font-size: 4vw;
+}
+.produkt{
+    top: -3.2vh;
+    left: 2%;
+}
+.product-img{
+    max-width:55%;
+}
+.product-napis{
+    font-size: 3.2vw;
+    left: 56%;
+    top: 4.5vh;
+    width: 80%;
+}
+.composition{
+    height: 5vh;
+    row-gap: 0.1vh;
+    column-gap: 2vh;
+    top: -6.5vh;
+    width: 100%;
+    left:2%;
+}
+.cost{
+
+    font-size: 3vw;
+}
+.cost2{
+    font-size: 3vw;
+}
+.vl {
+    height: 6.2vh;
+    top: 33%;
+  }
+
+ .check-box{
+    top:-6vh;
+    left: -1%;
+    width: 90%;
+  }
+  .first-check{
+    width: 120%;
+    top:3vh;
+    font-size: 2.3vw;
+  }
+  .required{
+    top:25%;
+    font-size: 2.5vw;
+    opacity: 0;
+  }
+  .secound-check{
+ width: 120%;
+    top:2.7vh;
+    font-size: 2.3vw;
+  }
+  input[type=button] {
+    width: 40%;
+    height: 4vh;
+    left: 28%;
+    top:-3vh; 
+}
+.btn[value] {
+ font-size: 2.5vw;
+}
+
+
+  }
