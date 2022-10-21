@@ -258,6 +258,7 @@ body {
     height: 20%;
     font-size: 0.8vw; color: rgb(195, 27, 27);font-family: Dm Sans;
     opacity: 0;
+    font-weight: 700;
   }
   .secound-check{
     position: relative;
@@ -352,7 +353,7 @@ input[type=button]:hover {
 .product-napis{
     font-size: 3.2vw;
     left: 56%;
-    top: 4.5vh;
+    top: 4.4vh;
     width: 80%;
 }
 .composition{
@@ -389,6 +390,7 @@ input[type=button]:hover {
     top:25%;
     font-size: 2.5vw;
     opacity: 0;
+    font-weight: 700;
   }
   .secound-check{
  width: 120%;
